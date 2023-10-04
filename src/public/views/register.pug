@@ -1,0 +1,22 @@
+
+
+.register-container
+  h2 Register
+  form(action="/users/register", method="post")
+    // Email input
+    .form-group
+      label(for="email") Email:
+      input(type="email", id="email", name="email", placeholder="Enter your email", required)
+
+    // Password input
+    .form-group
+      label(for="password") Password:
+      input(type="password", id="password", name="password", placeholder="Enter your password", required)
+
+    // Full Name input
+    .form-group
+      label(for="fullName") Full Name:
+      input(type="text", id="fullName", name="fullName", placeholder="Enter your full name", required)
+
+    // Register button
+    button(type="submit") Register
