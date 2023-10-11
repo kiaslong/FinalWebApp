@@ -1,22 +1,30 @@
-
-
-.register-container
-  h2 Register
-  form(action="/users/register", method="post")
-    // Email input
-    .form-group
-      label(for="email") Email:
-      input(type="email", id="email", name="email", placeholder="Enter your email", required)
-
-    // Password input
-    .form-group
-      label(for="password") Password:
-      input(type="password", id="password", name="password", placeholder="Enter your password", required)
-
-    // Full Name input
-    .form-group
-      label(for="fullName") Full Name:
-      input(type="text", id="fullName", name="fullName", placeholder="Enter your full name", required)
-
-    // Register button
-    button(type="submit") Register
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title SignIn&amp;SignUp
+  link(type='text/css' href='/style/styles.css' rel='stylesheet')
+  script(src='https://kit.fontawesome.com/64d58efce2.js' crossorigin='anonymous')
+.container
+  .forms-container
+      form.sign-up-form(action='')
+        h2.title Sign Up
+        .input-field
+          i.fas.fa-user
+          input(type='text' placeholder='Username')
+        .input-field
+          i.fas.fa-envelope
+          input(type='email' placeholder='Email')
+        .input-field
+          i.fas.fa-lock
+          input(type='password' placeholder='Password')
+        input.btn.solid(type='submit' value='Sign Up')
+        p.social-text liên hệ admin để biết thêm thông tin về tài khoản   
+  .panels-container
+    .panel.left-panel
+      .content
+        h3 Đăng ký Dành cho Saler 
+        p Hãy đăng ký để trở thành Saler của chúng tôi
+        button#sign-up-btn.btn.transparent Sign Up
+      img.image(src='assets/log.svg' alt='')
+script(src='/script/main.js')

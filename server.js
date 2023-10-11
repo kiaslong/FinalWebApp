@@ -13,12 +13,12 @@ async function startServer() {
      // Establish MongoDB connection
      await mongoDBConnection.connectToMongoDB();
     // Middleware to parse JSON request bodies
+    app.use(express.static(__dirname + '/src/public'));
     app.use(express.json());
     app.engine('pug', require('pug').__express)
     app.set('view engine', 'pug');
     app.set('views', __dirname +'/src/public/views/');
-   
-
+    
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use('/users', userRoutes);
    

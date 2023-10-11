@@ -1,0 +1,23 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title SignIn&amp;SignUp
+  link(type='text/css' href='/style/styles.css' rel='stylesheet')
+  script(src='https://kit.fontawesome.com/64d58efce2.js' crossorigin='anonymous')
+.container
+  .forms-container
+    .signin-signup
+      form.sign-in-form(action='/login')
+        h2.title Sign In
+        .input-field
+          i.fas.fa-user
+          input(type='text' placeholder='Username')
+        .input-field
+          i.fas.fa-lock
+          input(type='password' placeholder='Password')
+        input.btn.solid(type='submit' value='Login')
+       
+       
+  .panels-container
+script(src='/script/main.js')
