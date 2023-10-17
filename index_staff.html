@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Page </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp">
+  </head>
+  <body> 
+    <div class="container">
+      <aside> 
+        <div class="toggle"> 
+          <div class="logo"> <img src="./assets/logo.png" alt="" srcset="">
+            <h1>VLM <span>STORE</span></h1>
+          </div>
+          <div class="close" id="close-btn"><span class="material-icons-sharp">close</span></div>
+        </div>
+        <div class="sidebar"> <a href="#"><span class="material-icons-sharp">dashboard</span>
+            <h3>Dashboard</h3></a><a href="#"><span class="material-icons-sharp">person_outline</span>
+            <h3>Customers Management</h3></a><a class="dropdown" href="#"><span class="material-icons-sharp">star_rate</span>
+            <h3>Products </h3></a><a href="#"><span class="material-icons-sharp">insights </span>
+            <h3>Analytics</h3></a><a href="#"><span class="material-icons-sharp">payments </span>
+            <h3>Payment</h3></a><a href="#"><span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3></a></div>
+      </aside>
+      <main> 
+        <div class="breadcrumb-list"><a href="#"><span class="material-icons-sharp">home</span></a>
+          <ul class="breadcrumb">
+            <li><a href="#"> DashBoard</a></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="analyse"> 
+          <div class="sales"> 
+            <div class="status">    
+              <div class="info"> 
+                <h3>Total Sales</h3><span>------</span>
+                <h2> 13.500$</h2>
+              </div>
+              <div class="progresss"> 
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage"> 
+                  <p>+81%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products">
+            <div class="status">    
+              <div class="info"> 
+                <h3>Products Sold</h3><span>------</span>
+                <h2>2200 Items</h2>
+              </div>
+              <div class="progresss"> 
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage"> 
+                  <p>+10%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="visits"> 
+            <div class="status">    
+              <div class="info"> 
+                <h3>Site Visit</h3><span>------</span>
+                <h2>3500 Views</h2>
+              </div>
+              <div class="progresss"> 
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="percentage"> 
+                  <p>+36%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="new-users"> 
+          <h2>New Customers</h2>
+          <div class="user-list"> 
+            <div class="user"> <img src="assets/user1.jpg" alt="" srcset="">
+              <h3>Son</h3>
+              <p>54 mins ago </p>
+            </div>
+            <div class="user"><img src="assets/user2.jpg" alt="" srcset="">
+              <h3>Sterling</h3>
+              <p>2 hours ago </p>
+            </div>
+            <div class="user"> <img src="assets/user3.jpg" alt="" srcset="">
+              <h3>Foden</h3>
+              <p>1 hours ago</p>
+            </div>
+            <div class="user"> <img src="assets/user4.jpg" alt="" srcset="">
+              <h3>Ramos</h3>
+              <p>3 weeks ago</p>
+            </div>
+            <div class="user"> <span class="material-icons-sharp">more_horiz </span>
+              <h3>More </h3>
+              <p>New Customers</p>
+            </div>
+          </div>
+        </div>
+        <div class="recent-order">
+          <h2>Recent Orders </h2>
+          <table> 
+            <thead>  
+              <tr> 
+                <th>CusName</th>
+                <th>PhoneNum</th>
+                <th>Address </th>
+                <th>Day </th>
+                <th>Time</th>
+                <th>PayStatus</th>
+                <th>ProdName</th>
+                <th>Quantity</th>
+                <th>Status</th>
+              </tr>
+              <tbody> </tbody>
+            </thead>
+          </table><a href="#">Show All Orders</a>
+        </div>
+      </main>
+      <div class="right-section"> 
+        <div class="nav"> 
+          <div class="profile"> 
+            <div class="info"> 
+              <p>Hi, <b>Hoang Viet </b></p><small class="text-muted">Staff</small>
+            </div>
+            <div class="profile-photo"> <img src="./assets/user3.jpg" alt="" srcset=""></div>
+          </div>
+        </div>
+        <div class="reminders"> 
+          <div class="header"> 
+            <h2>Reminders </h2><span class="material-icons-sharp">notifications_none </span>
+          </div>
+          <div class="notification">
+            <div class="icon"> <span class="material-icons-sharp">volume_up </span></div>
+            <div class="content"> 
+              <div class="info"> 
+                <h3>Workshop </h3><small class="text-muted">08:00 AM - 12:00 PM</small>
+              </div><span class="material-icons-sharp">more_vert</span>
+            </div>
+          </div>
+          <div class="notification deactive">
+            <div class="icon"> <span class="material-icons-sharp">edit</span></div>
+            <div class="content"> 
+              <div class="info"> 
+                <h3>Workshop </h3><small class="text-muted">08:00 AM - 12:00 PM</small>
+              </div><span class="material-icons-sharp">more_vert</span>
+            </div>
+          </div>
+          <div class="notification addreminder">
+            <div> <span class="material-icons-sharp">add </span>
+              <h3>Add Reminder</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/order.js"></script>
+    <script src="./js/index.js">            </script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Staff Page 
+        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp")
+    body 
+        .container
+            //-sidebar section
+            aside 
+                .toggle  
+                    .logo 
+                        img(src="./assets/logo.png", alt="", srcset="")
+                        h1 VLM 
+                            span STORE
+                    .close(id="close-btn")
+                            span.material-icons-sharp close
+                .sidebar 
+                    a(href="#")
+                        span.material-icons-sharp dashboard
+                        h3 Dashboard
+                    a(href="#")
+                        span.material-icons-sharp person_outline
+                        h3 Customers Management
+                    a(href="#" class="dropdown")
+                        span.material-icons-sharp star_rate
+                        h3 Products 
+                    a(href="#")
+                        span.material-icons-sharp insights 
+                        h3 Analytics
+                    a(href="#")
+                        span.material-icons-sharp payments 
+                        h3 Payment
+                    a(href="#")
+                        span.material-icons-sharp logout
+                        h3 Logout
+            //- end of sidebar section
+
+             //-main content
+            main 
+                .breadcrumb-list
+                    a(href="#")
+                        span.material-icons-sharp home
+                    ul.breadcrumb
+                        li
+                            a(href="#")  DashBoard
+                        li
+                //-bang phan tich du lieu trong thang
+                .analyse  
+                    .sales 
+                        .status     
+                            .info 
+                                h3 Total Sales
+                                span ------
+                                h2  13.500$
+                            .progresss 
+                                svg
+                                    circle(cx="38" cy="38" r="36")
+                                .percentage 
+                                    p +81%
+                    .products
+                        .status     
+                            .info 
+                                h3 Products Sold
+                                span ------
+                                h2 2200 Items
+                            .progresss 
+                                svg
+                                    circle(cx="38" cy="38" r="36")
+                                .percentage 
+                                    p +10%
+                    .visits 
+                        .status     
+                            .info 
+                                h3 Site Visit
+                                span ------
+                                h2 3500 Views
+                            .progresss 
+                                svg
+                                    circle(cx="38" cy="38" r="36")
+                                .percentage 
+                                    p +36%
+                //-customer
+                .new-users  
+                    h2 New Customers
+                    .user-list 
+                        .user 
+                            
+                                img(src="assets/user1.jpg", alt="", srcset="")
+                                h3 Son
+                                p 54 mins ago 
+                        .user
+                            
+                                img(src="assets/user2.jpg", alt="", srcset="")
+                                h3 Sterling
+                                p 2 hours ago 
+                        .user 
+                            
+                                img(src="assets/user3.jpg", alt="", srcset="")
+                                h3 Foden
+                                p 1 hours ago
+                        .user 
+                            
+                                img(src="assets/user4.jpg", alt="", srcset="")
+                                h3 Ramos
+                                p 3 weeks ago
+                        .user 
+                            
+                                span.material-icons-sharp more_horiz 
+                                h3 More 
+                                p New Customers
+                //-Order recent
+                .recent-order
+                    h2 Recent Orders 
+                    table 
+                        thead   
+                            tr 
+                                th CusName
+                                th PhoneNum
+                                th Address 
+                                th Day 
+                                th Time
+                                th PayStatus
+                                th ProdName
+                                th Quantity
+                                th Status
+                            tbody 
+                    a(href="#") Show All Orders
+
+            .right-section  
+                .nav 
+                    .profile 
+                        .info 
+                            p Hi, 
+                                b Hoang Viet 
+                            small(class="text-muted") Staff
+                        .profile-photo 
+                            img(src="./assets/user3.jpg", alt="", srcset="") 
+                .reminders 
+                    .header 
+                        h2 Reminders 
+                        span.material-icons-sharp notifications_none 
+                    .notification
+                        .icon 
+                            span.material-icons-sharp volume_up 
+                        .content 
+                            .info 
+                                h3 Workshop 
+                                small.text-muted 08:00 AM - 12:00 PM
+                            span.material-icons-sharp more_vert
+
+                    .notification.deactive
+                        .icon 
+                            span.material-icons-sharp edit
+                        .content 
+                            .info 
+                                h3 Workshop 
+                                small.text-muted 08:00 AM - 12:00 PM
+                            span.material-icons-sharp more_vert
+
+                    .notification.addreminder
+                        div 
+                            span.material-icons-sharp add 
+                            h3 Add Reminder
+        script(src="./js/order.js")
+        script(src="./js/index.js")             
+
+
+    
+    
+                    
+                    
+                
