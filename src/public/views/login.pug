@@ -2,22 +2,22 @@ doctype html
 head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title SignIn&amp;SignUp
+  title Document
+  link(href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet')
   link(type='text/css' href='/style/styles.css' rel='stylesheet')
-  script(src='https://kit.fontawesome.com/64d58efce2.js' crossorigin='anonymous')
-.container
-  .forms-container
-    .signin-signup
-      form.sign-in-form(action='/login')
-        h2.title Sign In
-        .input-field
-          i.fas.fa-user
-          input(type='text' placeholder='Username')
-        .input-field
-          i.fas.fa-lock
-          input(type='password' placeholder='Password')
-        input.btn.solid(type='submit' value='Login')
-       
-       
-  .panels-container
-script(src='/script/main.js')
+.wrapper
+  form(action='/login')
+    h1
+      | Login
+    .input-box
+      input(type='text' placeholder='Username' required='')
+      i.bx.bxs-user
+    .input-box
+      input(type='password' placeholder='Password' required='')
+      i.bx.bxs-lock-alt
+    .remember-forgot
+      label(for='')
+        input(type='checkbox' value='')
+        |  Remember me
+      a(href='#') forgot password?
+    button.btn(type='submit')  Login
