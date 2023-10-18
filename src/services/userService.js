@@ -1,9 +1,9 @@
-const User = require('../models/users');
+
 const bcrypt = require('bcrypt');
 const { client } = require('../database/mongoDBconnection');
-const db = client.db("users");
+const db = client.db("phoneretail");
 // Register a new user
-async function registerUser({ email, password, fullName }) {
+async function registerUser({ email, password, username }) {
   try {
     // Check if the user with the same email already exists
     const existingUser = await db.collection("users").findOne({ email });
@@ -18,7 +18,7 @@ async function registerUser({ email, password, fullName }) {
     const newUser = {
       email,
       password: hashedPassword,
-      fullName,
+      username,
     };
 
     // Save the user to the "users" collection
@@ -31,10 +31,10 @@ async function registerUser({ email, password, fullName }) {
 }
 
 // Login user
-async function loginUser({ email, password }) {
+async function loginUser({ username, password }) {
   try {
     // Find the user by email
-    const user = await User.findOne({ email });
+    const user = await db.collection("users").findOne({ username });
 
     if (!user) {
       throw new Error('Authentication failed.');

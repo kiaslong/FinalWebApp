@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 
 const mongoDBConnection = require('./src/database/mongoDBconnection');
 const userRoutes = require('./src/routes/userRoute');
-
-
+const productRoutes = require('./src/routes/productRoute');
+const indexRoutes = require('./src/routes/indexRoute');
 // Connect to MongoDB and start the server
 async function startServer() {
   try {
@@ -20,6 +20,8 @@ async function startServer() {
     app.set('views', __dirname +'/src/public/views/');
     
     app.use(bodyParser.urlencoded({ extended: false }));
+    app.use('/',indexRoutes);
+    app.use('/products',productRoutes)
     app.use('/users', userRoutes);
    
 
