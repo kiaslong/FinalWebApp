@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    background: url("../assets/aus1.png");
+    background: url("../assets/aus2.png");
     background-size: cover;
     background-position: center;
 }
@@ -43,7 +43,7 @@ body {
     background: transparent !important;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border:  5px solid rgba(255, 255, 255, .2);
     border-radius: 50px !important;
     font-size: 16px;
     color: #fff;
@@ -91,3 +91,4 @@ body {
     color: #333;
     font-weight: 500;
 }
+

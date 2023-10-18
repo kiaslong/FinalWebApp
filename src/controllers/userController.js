@@ -24,5 +24,14 @@ exports.loginUser = async (req, res) => {
     res.status(500).json({ message: 'Internal server error' });
   }
 };
-
+//profileUser
+exports.profileUser = async (req, res) => {
+  try { 
+    const result = await userService.profileUser({ email, password, fullName });
+    res.status(201).json(result);
+  } catch (error) {
+    console.error('Error registering user:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+};
 // ... other user-related controllers ...
