@@ -1,4 +1,4 @@
-const User = require('../models/users');
+
 const bcrypt = require('bcrypt');
 const { client } = require('../database/mongoDBconnection');
 const db = client.db("users");
@@ -34,7 +34,7 @@ async function registerUser({ email, password, fullName }) {
 async function loginUser({ email, password }) {
   try {
     // Find the user by email
-    const user = await User.findOne({ email });
+    const user = await db.collection("users").findOne({ email });
 
     if (!user) {
       throw new Error('Authentication failed.');
