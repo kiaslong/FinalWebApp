@@ -2,29 +2,15 @@ doctype html
 head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title SignIn&amp;SignUp
-  link(type='text/css' href='/style/styles.css' rel='stylesheet')
-  script(src='https://kit.fontawesome.com/64d58efce2.js' crossorigin='anonymous')
-.container
-  .forms-container
-      form.sign-up-form(action='')
-        h2.title Sign Up
-        .input-field
-          i.fas.fa-user
-          input(type='text' placeholder='Username')
-        .input-field
-          i.fas.fa-envelope
-          input(type='email' placeholder='Email')
-        .input-field
-          i.fas.fa-lock
-          input(type='password' placeholder='Password')
-        input.btn.solid(type='submit' value='Sign Up')
-        p.social-text liên hệ admin để biết thêm thông tin về tài khoản   
-  .panels-container
-    .panel.left-panel
-      .content
-        h3 Đăng ký Dành cho Saler 
-        p Hãy đăng ký để trở thành Saler của chúng tôi
-        button#sign-up-btn.btn.transparent Sign Up
-      img.image(src='assets/log.svg' alt='')
-script(src='/script/main.js')
+  title Document
+  link(href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css', rel='stylesheet')
+  link(type='text/css', href='/style/styles.css', rel='stylesheet')
+.wrapper
+  form(action='/users/register', method='post')
+    h1
+      | Create Account For Employee
+    .form-group
+      .input-box
+        input(type='email', id='email', name='email', placeholder='Enter your email', required)
+        i.bx.bxs-envelope
+    button.btn(type='submit') Create
