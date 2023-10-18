@@ -1,0 +1,99 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Products
+    link(rel="stylesheet", href="/style/index.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp")
+  body
+    .container
+      //- Sidebar section
+      aside
+        .toggle
+          .logo
+            img(src="../assets/logo.png", alt="", srcset="")
+            h1 MVL
+              span STORE
+        .sidebar
+          a(href="/")
+            span.material-icons-sharp dashboard
+            h3 Dashboard
+          a(href="/products" class="dropdown")
+            span.material-icons-sharp star_rate
+            h3 Products
+          a(href="#")
+            span.material-icons-sharp insights
+            h3 Analytics
+          a(href="#")
+            span.material-icons-sharp person_outline
+            h3 Customers Management
+          a(href="#")
+            span.material-icons-sharp person_outline
+            h3 Staff Management
+          a(href="#")
+            span.material-icons-sharp logout
+            h3 Logout
+      //- End of sidebar section
+      //- Product Cards
+      main
+        .breadcrumb-list
+          i
+            span.material-icons-sharp home
+        ul.breadcrumb
+          li
+            a(href="#") DashBoard
+          li
+            a(href="#") Products
+        .list-order-product
+                    h2 Products list 
+                    table 
+                        thead   
+                            tr 
+                                th Barcode
+                                th ProductName
+                                th Import Price
+                                th Retail Price
+                                th Category 
+                                th Creation Date
+                            tbody 
+                                 each product in products
+                                    tr
+                                        td= product.barcode
+                                        td= product.productName
+                                        td= product.importPrice
+                                        td= product.retailPrice
+                                        td= product.category
+                                        td= product.creationDate                              
+        // Repeat product cards as needed
+      //- Add Product Section
+      .right-section
+        .nav
+          .profile
+            .info
+              p Hi,
+                b Admin
+
+            .profile-photo
+              img(src="assets/user1.jpg", alt="", srcset="")
+        .add-product
+          .header
+            span.material-icons-sharp add
+            h2 NewProduct
+          form(action="/products/add" method="post")
+            .main-product-info
+              .product-name
+                label(for="productName") Product Name:
+                input(type="text" id="productName" name="productName" placeholder="Enter product name")
+              .product-price
+                label(for="productPrice") Import Price:
+                input(type="text" id="importPrice" name="importPrice" placeholder="Enter import price")
+              .product-price
+                label(for="productPrice") Retail Price:
+                input(type="text" id="retailPrice" name="retailPrice" placeholder="Enter retail price")
+              .product-category
+                label(for="productCategory") Product Category:
+                input(type="text" id="category" name="category" placeholder="Enter product category")
+              button(type="submit") Add Product
+  script(src="/script/main.js")
