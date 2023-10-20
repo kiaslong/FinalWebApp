@@ -19,7 +19,6 @@ exports.registerUser = async (req, res) => {
 exports.loginUser = async (req, res) => {
   try {
     const { username, password } = req.body;
-    console.log(username, password);
     const result = await userService.loginUser({ username, password });
     return res.redirect('/');
   } catch (error) {
