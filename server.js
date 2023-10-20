@@ -12,7 +12,7 @@ async function startServer() {
   try {
      // Establish MongoDB connection
      await mongoDBConnection.connectToMongoDB();
-    // Middleware to parse JSON request bodies
+   
     app.use(express.static(__dirname + '/src/public'));
     app.use(express.json());
     app.engine('pug', require('pug').__express)
