@@ -3,12 +3,11 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Staff Page
+        title Admin Page
         link(rel="stylesheet", href="style.css")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp")
     body 
-        .container 
-            //-sidebar section
+        .container
             aside 
                 .toggle  
                     .logo 
@@ -17,6 +16,7 @@ html(lang="en")
                             span STORE
                     .close(id="close-btn")
                             span.material-icons-sharp close
+                    
                 .sidebar 
                     a(href="#")
                         span.material-icons-sharp dashboard
@@ -31,25 +31,28 @@ html(lang="en")
                         span.material-icons-sharp insights 
                         h3 Analytics
                     a(href="#")
-                        span.material-icons-sharp payments 
-                        h3 Payment
+                        span.material-icons-sharp report
+                        h3 Sales Report
+                    a(href="#")
+                        span.material-icons-sharp add 
+                        h3 Add Staff
                     a(href="#")
                         span.material-icons-sharp logout
                         h3 Logout
             //- end of sidebar section
-
             main 
                 .right-section  
                     .nav 
                         button.btn-menu(id="menu-btn")
-                                span.material-icons-sharp menu_open
+                            span.material-icons-sharp menu_open
                         .profile 
                             .info 
                                 p Hi, 
                                     b Hoang Viet 
-                                small(class="text-muted") Staff
+                                small(class="text-muted") Admin
                             .profile-photo 
-                                img(src="./images/user3.jpg", alt="", srcset="")
+                                img(src="./images/user1.jpg", alt="", srcset="")
+                        
                 .breadcrumb-list
                     a(href="#")
                         span.material-icons-sharp home
@@ -137,8 +140,3 @@ html(lang="en")
                     a(href="#") Show All Orders                    
         script(src="./js/order.js")
         script(src="./js/index.js") 
-                
-                
-                                
-                                
-                            

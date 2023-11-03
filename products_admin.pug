@@ -1,0 +1,212 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Products 
+        link(rel="stylesheet", href="style.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp")
+    body 
+        .container_admin
+            //-sidebar section
+            aside 
+                .toggle  
+                    .logo 
+                        img(src="./images/logo.png", alt="", srcset="")
+                        h1 VLM 
+                            span STORE
+                    .close(id="close-btn")
+                            span.material-icons-sharp close
+                .sidebar 
+                    a(href="#")
+                        span.material-icons-sharp dashboard
+                        h3 Dashboard
+                    a(href="#")
+                        span.material-icons-sharp person_outline
+                        h3 Customers 
+                    a(href="#" class="dropdown")
+                        span.material-icons-sharp star_rate
+                        h3 Products 
+                    a(href="#")
+                        span.material-icons-sharp insights 
+                        h3 Analytics
+                    a(href="#")
+                        span.material-icons-sharp report
+                        h3 Sales Report
+                    a(href="#")
+                        span.material-icons-sharp add 
+                        h3 Add Staff
+                    a(href="#")
+                        span.material-icons-sharp logout
+                        h3 Logout
+            //- end of sidebar section
+            main    
+                .breadcrumb-list
+                    i
+                        span.material-icons-sharp home
+                    ul.breadcrumb
+                        li
+                            a(href="#")  DashBoard
+                        li
+                            a(href="#")  Products
+                //-.dropdown-menu 
+                    button(onclick="myFunction()" class="dropbtn") Add Product
+                    .dropdown-content(id="myDropdown")
+                        form(action="#") 
+                            .main-product-info 
+                                .product-name 
+                                    label(for="productName") Product Name: 
+                                    input(type="text" id="productName" name="productName" placeholder="Enter product name")
+                                .product-price 
+                                    label(for="productPrice") Product Price:
+                                    input(type="text" id="productPrice" name="productPrice" placeholder="Enter product price")
+                                .product-category
+                                    label(for="productCategory") Product Category:
+                                    input(type="text" id="productCategory" name="productCategory" placeholder="Enter product category")
+                                .product-description 
+                                    label(for="productDescription") Product Description:
+                                    input(type="text" id="productDescription" name="productDescription" placeholder="Enter product decription")
+                                .product-image 
+                                    label(for="productImg") Upload Image:
+                                    input(type="file" id="myFile") 
+                                button(type="submit") Add Product
+
+                .products   
+                    .product-card
+                        .card-heart
+                            i 
+                                span.material-icons-sharp favorite
+                        .card-img 
+                            img(src="./images/product1.png", alt="", srcset="")
+                        .card-tittle YEEZY 700 V3
+                        .card-price $740
+                        .card-category Sneakers
+                        .card-discription Sport Sneaker for men
+                        .card-action 
+                            button Edit
+                            button Delete
+                    .product-card
+                        .card-heart
+                            i 
+                                span.material-icons-sharp favorite
+                        .card-img 
+                            img(src="./images/product1.png", alt="", srcset="")
+                        .card-tittle YEEZY 700 V3
+                        .card-price $740
+                        .card-category Sneakers
+                        .card-discription Sport Sneaker for men
+                        .card-action 
+                            button Edit
+                            button Delete 
+                    .product-card
+                        .card-heart
+                            i 
+                                span.material-icons-sharp favorite
+                        .card-img 
+                            img(src="./images/product1.png", alt="", srcset="")
+                        .card-tittle YEEZY 700 V3
+                        .card-price $740
+                        .card-category Sneakers
+                        .card-discription Sport Sneaker for men
+                        .card-action 
+                            button Edit
+                            button Delete
+                    .product-card
+                        .card-heart
+                            i 
+                                span.material-icons-sharp favorite
+                        .card-img 
+                            img(src="./images/product1.png", alt="", srcset="")
+                        .card-tittle YEEZY 700 V3
+                        .card-price $740
+                        .card-category Sneakers
+                        .card-discription Sport Sneaker for men
+                        .card-action 
+                            button Edit
+                            button Delete
+                    .product-card
+                        .card-heart
+                            i 
+                                span.material-icons-sharp favorite
+                        .card-img 
+                            img(src="./images/product1.png", alt="", srcset="")
+                        .card-tittle YEEZY 700 V3
+                        .card-price $740
+                        .card-category Sneakers
+                        .card-discription Sport Sneaker for men
+                        .card-action 
+                            button Edit
+                            button Delete 
+                    .product-card
+                        .card-heart
+                            i 
+                                span.material-icons-sharp favorite
+                        .card-img 
+                            img(src="./images/product1.png", alt="", srcset="")
+                        .card-tittle YEEZY 700 V3
+                        .card-price $740
+                        .card-category Sneakers
+                        .card-discription Sport Sneaker for men
+                        .card-action 
+                            button Edit
+                            button Delete
+                    .product-card
+                        .card-heart
+                            i 
+                                span.material-icons-sharp favorite
+                        .card-img 
+                            img(src="./images/product1.png", alt="", srcset="")
+                        .card-tittle YEEZY 700 V3
+                        .card-price $740
+                        .card-category Sneakers
+                        .card-discription Sport Sneaker for men
+                        .card-action 
+                            button Edit
+                            button Delete 
+                    .product-card
+                        .card-heart
+                            i 
+                                span.material-icons-sharp favorite
+                        .card-img 
+                            img(src="./images/product1.png", alt="", srcset="")
+                        .card-tittle YEEZY 700 V3
+                        .card-price $740
+                        .card-category Sneakers
+                        .card-discription Sport Sneaker for men
+                        .card-action 
+                            button Edit
+                            button Delete     
+            .right-section
+                .nav 
+                    button.btn-menu(id="menu-btn")
+                        span.material-icons-sharp menu_open
+                    .profile 
+                        .info 
+                            p Hi, 
+                                b Hoang Viet 
+                            small(class="text-muted") Admin
+                        .profile-photo 
+                            img(src="./images/user1.jpg", alt="", srcset="")
+                .add-product 
+                    .header 
+                        h2 Add Product
+                    form(action="#") 
+                        .main-product-info 
+                            .product-name 
+                                label(for="productName") Product Name: 
+                                input(type="text" id="productName" name="productName" placeholder="Enter product name")
+                            .product-price 
+                                label(for="productPrice") Product Price:
+                                input(type="text" id="productPrice" name="productPrice" placeholder="Enter product price")
+                            .product-category
+                                label(for="productCategory") Product Category:
+                                input(type="text" id="productCategory" name="productCategory" placeholder="Enter product category")
+                            .product-description 
+                                label(for="productDescription") Product Description:
+                                input(type="text" id="productDescription" name="productDescription" placeholder="Enter product decription")
+                            .product-image 
+                                label(for="productImg") Upload Image:
+                                input(type="file" id="myFile") 
+                            button(type="submit") Add Product 
+        script(src="./js/index.js")
